@@ -15,7 +15,7 @@ This helps you confirm your current location within the file system.
 DigitalOcean
 Linuxize
 
-2. ls — List Directory Contents
+## 2. 'wls' — List Directory Contents
 Lists files and folders in the current (or specified) directory.
 
 bash
