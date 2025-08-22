@@ -14,8 +14,8 @@ This guide covers **system management**, **permissions**, **monitoring**, and **
 # Update system packages
 sudo apt update && sudo apt upgrade
 ````
-![frvv](exp3.1.png)
-![fyi](exp3.5.png)
+![ugcu](images/exp3.1-1.png)
+![fyi](images/exp3.5.png)
 > ⚠️ **Warning:** Use `sudo` carefully—mistakes can break the system.
 
 ---
@@ -33,7 +33,7 @@ Linux is a **multi-user system**. Manage users like a pro:
 | `deluser` | Remove a user               | `sudo deluser drishti`          |
 
 
-![vgu](exp3.2.png)
+![few](images/exp3.2.png)
 
 ---
 
@@ -57,8 +57,8 @@ chmod g-group
       o-others
       s-user
 
-![ivfyi](exp3.7.png)
-![dt](exp3.8.png)
+![ivfyi](images/exp3.7.png)
+![dt](images/exp3.8.png)
 
 ### `chown` – Change File Ownership
 
@@ -66,13 +66,13 @@ chmod g-group
 # Make "drishti" the owner of file.txt
 sudo chown drishti file.txt
 
-![bik](exp3.9.png)
+![bik](images/exp3.9.png)
 
 # Change owner and group
 sudo chown drishti:developers project/
 ```
 
-> 💡 ![ecwe](exp3.9-1.png)
+> 💡 ![ecwe](images/exp3.9-1.png)
 
 ---
 
@@ -81,7 +81,7 @@ sudo chown drishti:developers project/
 ### `df` – Disk Free
 
 
-![obho](exp3.10.png)
+![obho](images/exp3.10.png)
 
 Check **disk space usage** of mounted filesystems:
 
@@ -93,14 +93,14 @@ df -h
 
 ### `du` – Disk Usage
 
-![giu](exp3.11.png)
+![giu](images/exp3.11.png)
 
 Check **space taken by directories/files**:
 
 ```bash
 du -sh *
 
-![vj](exp3.12.png)
+![vj](images/exp3.12.png)
 ```
 
 * `-s` → summary
@@ -123,7 +123,7 @@ top
 * `M` → sort by memory usage
 * `P` → sort by CPU usage
 
-![jgyi](exp3.3.png)
+![jgyi](images/exp3.3.png)
 
 ---
 
@@ -138,7 +138,7 @@ ping google.com
 * Useful for checking if a host is reachable.
 * `Ctrl + C` → stop ping.
 
-![iyf](exp3.4.png)
+![iyf](images/exp3.4.png)
 
 ### `ss` – Socket Statistics (Modern replacement for `netstat`)
 
@@ -146,12 +146,12 @@ ping google.com
 # Show all listening ports
 ss -tuln
 
-![vi](exp3.13.png)
+![vi](images/exp3.13.png)
 
 # Show established connections
 ss -tn state established
 
-![ibu](exp3.4.png)
+![ibu](images/exp3.4.png)
 
 ```
 
@@ -169,9 +169,9 @@ sudo apt upgrade           # Upgrade installed packages
 sudo apt install git       # Install a package
 sudo apt remove git        # Uninstall a package
 ```
-![vtu](exp3.1-1.png)
-![bi](exp3.5-1.png)
-![t](exp3.6-1.png)
+![vtu](images/exp3.1-1.png)
+![bi](images/exp3.5-1.png)
+![t](images/exp3.6-1.png)
 
 ---
 
