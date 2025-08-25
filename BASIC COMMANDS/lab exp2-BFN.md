@@ -1,7 +1,5 @@
 # VS Code Terminal: Basic File Navigation & Management Commands
 
-Use these common shell commands directly in VS Code's integrated terminal (open with `Ctrl+`` on Windows/Linux or `⌃\`` on macOS).
-
 ---
 
 ## 1. `pwd` — Print Working Directory

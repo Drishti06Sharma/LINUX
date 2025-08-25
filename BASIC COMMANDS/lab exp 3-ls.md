@@ -1,13 +1,5 @@
 # execution of basic commands of linux
 
-Perfect 🚀 Let’s create a **GitHub-friendly Markdown file** that looks **fun, structured, and interactive** for beginners.
-I’ll include **emojis, tables, examples, collapsible sections, and even GIFs** (via links).
-
-Here’s your file:
-
----
-
-````md
 # 🐧 Basic Linux Commands – Beginner’s Guide  
 
 Welcome to your **Linux command-line playground** 🎉  
