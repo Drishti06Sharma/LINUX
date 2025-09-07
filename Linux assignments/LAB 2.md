@@ -11,7 +11,7 @@ Shell scripting is a powerful tool to automate tasks in Unix/Linux systems. In t
 
 Think of it like giving your computer a **to-do list** 📝.
 
-![Shell Script Explanation](https://media.giphy.com/media/xUOxf3mn2bRZzC0r6w/giphy.gif)
+![ hj](../images/gif9.png)
 
 ---
 
