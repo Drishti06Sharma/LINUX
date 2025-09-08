@@ -155,12 +155,6 @@ Step must be a positive number.
 
 🤔 WHAT DOES EXIT 1 MEAN IN A SCRIPT ?
 
-Got it! Here’s a creative, punchy version for you:
-
----
-
-### What does `exit 1` mean? 🚦
-
 `exit 1` is the script’s way of saying:
 
 > **“Stop right there! 🚫 Something went wrong.”**
