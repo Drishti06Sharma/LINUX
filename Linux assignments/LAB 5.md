@@ -1,3 +1,5 @@
+✌𝓞𝓑𝓙𝓔𝓒𝓣𝓘𝓥𝓔✌
+
 # 🚀 Purpose of `starter_kit.sh` Script
 
 The `starter_kit.sh` script is your **go-to quick starter** for creating a clean and organized project environment! 🎉
