@@ -9,6 +9,29 @@ A simple **Bash script** to quickly check if a given file is:
 
 ---
 
+### CODE:💻
+
+
+#!/bin/bash
+# check_perms.sh
+# Usage: ./check_perms.sh filename
+
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 <filename>"
+  exit 1
+fi
+
+file="$1"
+[ -r "$file" ] && echo "$file: readable" || echo "$file: NOT readable"
+[ -w "$file" ] && echo "$file: writable" || echo "$file: NOT writable"
+[ -x "$file" ] && echo "$file: executable" || echo "$file: NOT executable"
+
+
+### PICTORIAL REPRESENTATION:📷
+
+![vg](../images/chk1.png)
+
+
 ## 📄 Usage
 
 ```bash
@@ -86,5 +109,4 @@ Usage: ./check_perms.sh <filename>
 
 ### PICTORIAL REPRESENTATION:📷
 
-![vg](../images/chk1.png)
 ![uig](../images/chk2.png)
