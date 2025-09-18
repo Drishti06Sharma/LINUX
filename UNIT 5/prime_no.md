@@ -1,8 +1,3 @@
-Certainly! Here's a creative, fun, and attractive `README.md` for your `prime_check.sh` script, packed with emojis and clear explanations to make it engaging and easy to follow! 🚀🔢✨
-
----
-
-````md
 # 🧮 `prime_check.sh` — Prime Number Checker 🔍✨
 
 Wondering if a number is **prime**?  
