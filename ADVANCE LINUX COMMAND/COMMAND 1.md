@@ -3,7 +3,7 @@
 # PS - AUX
 The `ps aux` command in Linux is used to **display information about all running processes** on the system. It's a combination of options passed to the `ps` (process status) command.
 
----
+--- sc
 
 ### 🔧 Command Breakdown: `ps aux`
 
