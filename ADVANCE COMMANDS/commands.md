@@ -420,7 +420,7 @@ To **trace system calls** made by a process in Linux, you typically use the `str
 
 ```bash
 strace <command>
-```
+``` x
 
 
 ---
