@@ -34,7 +34,7 @@ The `ps aux` command in Linux is used to **display information about all running
 
 ### PICTORIAL REPRESNENTATION:
 
-![vh](image.png)
+![vy](../images/psaux.png)
 
 # PROCESS TREE
 
@@ -50,7 +50,7 @@ pstree -p
 
 ### OUTPUT
 
-![UVB](image-1.png)
+![UVB](../images/pstreep.png)
 
 ### 📘 What It Does:
 
@@ -77,10 +77,8 @@ pstree -p
 * `pstree -c` — Do **not collapse identical subtrees**.
 
 
-
-![BH](image-2.png)
-![GH](image-5.png)
-![GY](image-6.png)
+![GH](../images/pstreeu.png)
+![GY](../images/pstreec.png)
 ---
 
 # REAL TIME MONITORING:
@@ -104,9 +102,9 @@ This opens a full-screen terminal interface that updates every few seconds.
 
 ---
 
-### OUTPUT
+## OUTPUT
 
-![VHYU](image-7.png)
+![VHYU](../images/top.png)
 
 ### 📌 Key Sections Explained:
 
@@ -162,7 +160,7 @@ There are two main ways to do this:
 ## 🔼 1. **Start a Process with a Priority** — using `nice`
 
 ```bash
-nice -n [priority] command
+nice -n 10 sleep 300 &
 ```
 
 * Priority range: `-20` (highest priority) to `19` (lowest).
@@ -174,7 +172,7 @@ nice -n [priority] command
 ## 🔁 2. **Change Priority of an Existing Process** — using `renice`
 
 ```bash
-renice [new_priority] -p [PID]
+renice -n -5 -p 4646
 ```
 
 
@@ -185,7 +183,8 @@ renice [new_priority] -p [PID]
 
 ### OUTPUT:
 
-![UV](image-8.png)
+![UV](../images/nice.png)
+
 ### 📌 Notes:
 
 * A **lower nice value = higher priority**.
@@ -195,26 +194,7 @@ renice [new_priority] -p [PID]
 
 ---
 
-## ⌨️ Interactive: Adjusting Priority via `top`
-
-You can also adjust priority **from within `top`**:
-
-1. Run `top`.
-2. Press `r` to **renice** a process.
-3. Enter the **PID**.
-4. Enter the new **nice value**.
-
----
-
 ### ✅ Check Priority:
-
-```bash
-ps -o pid,ni,comm -p <PID>
-```
-
-This shows the **nice value** (`ni`) of a process.
-
----
 
 # CPU AFFINITY (BIND PROCESS TO CPU CORE) :
 
@@ -227,34 +207,10 @@ Binding a process to a specific CPU core(s) in Linux is called setting its **CPU
 **CPU affinity** defines the set of CPU cores on which a process is allowed to run. By default, processes can run on any core, but you can restrict them to specific cores using:
 
 * `taskset` (command-line tool)
-* `sched_setaffinity` (programmatically in C)
 
 ---
 
-## 🛠️ 1. **Using `taskset`**
-
-### 📌 To start a new process with CPU affinity:
-
-```bash
-taskset -c [CPU_CORE_LIST] command
-```
-
----
-
-### 📌 To change affinity of an existing process:
-
-```bash
-taskset -cp [CPU_CORE_LIST] [PID]
-```
-
-
----
-
-## 🔎 Check Current CPU Affinity
-
-```bash
-taskset -cp [PID]
-```
+## 🛠️ **Using `taskset`**
 
 # INPUT:
 
@@ -280,18 +236,8 @@ Use `lscpu` or `nproc` to check the number of cores available.
 
 ## OUTPUT:
 
-![UVY](image-9.png)
+![UVY](../images/taskset.png)
 
-## 🛑 Important Notes
-
-* You need **root** permissions to change affinity of another user's process.
-* Setting CPU affinity doesn’t guarantee performance gain; it's useful in:
-
-  * Real-time processing
-  * Reducing cache misses
-  * CPU isolation strategies
-
----
 
 # I/O SCHEDULING PRIORITY :
 
@@ -312,12 +258,11 @@ In Linux, **I/O priority** controls how the kernel schedules disk I/O for proces
 ionice -c <class> -n <priority> -p <PID>
 ```
 
-Or to **start a process** with I/O priority:
-
-```bash
-ionice -c <class> -n <priority> command
+# INPUT:
 ```
-
+bash
+ionice -c 3 -p 4646
+```
 ---
 
 ## 🎛️ I/O Priority Classes
@@ -331,21 +276,6 @@ There are **three scheduling classes**:
 | **Real Time**             | `1`  | Highest priority — used with care. Can hog disk. Root only. |
 
 > 🎯 **Lower numbers = higher priority** (just like `nice` values)
-
----
-
----
-
-## ⚠️ Notes
-
-* I/O priority only applies to **block devices** (disk I/O, not network or CPU).
-* The I/O scheduler (like **CFQ**, **BFQ**, or **noop**) must support priorities. Some modern systems use **`mq-deadline`** or **`none`**, where `ionice` may have no effect.
-
-  * Check your scheduler with:
-
-    ```bash
-    cat /sys/block/sdX/queue/scheduler
-    ```
 
 ---
 
@@ -398,8 +328,11 @@ lsof -p <PID>
 ---
 
 # OUTPUT:
+![gu](../images/pshead.png)
 
-![UGI](image-10.png)
+![jh](../images/proc.png)
+
+![UGI](../images/image-10.png)
 
 
 ### 3. **Count the Number of Open FDs**
@@ -407,7 +340,9 @@ lsof -p <PID>
 ```bash
 ls /proc/<PID>/fd | wc -l
 ```
+# OUTPUT:
 
+![guv](../images/countpid.png)
 
 ---
 
@@ -422,36 +357,18 @@ To **trace system calls** made by a process in Linux, you typically use the `str
 strace <command>
 ``` x
 
-
 ---
 
 ## 🔍 2. **Attach to an Existing Process**
 
 ```bash
-sudo strace -p <PID>
+sudo strace -p 4646
 ```
 
 # OUTPUT:
 
-![YU](image-11.png)
+![YU](../images/strace.png)
 
-
-
-
-## 📌 Commonly Used Options
-
-| Option                | Description                                                 |
-| --------------------- | ----------------------------------------------------------- |
-| `-p <PID>`            | Attach to running process                                   |
-| `-e trace=<set>`      | Filter by syscall type (e.g., `file`, `network`, `process`) |
-| `-e trace=read,write` | Trace only `read` and `write`                               |
-| `-e open,close`       | Trace specific syscalls                                     |
-| `-f`                  | Follow child processes (forks)                              |
-| `-tt`                 | Add timestamps                                              |
-| `-T`                  | Show time spent in each syscall                             |
-| `-c`                  | Summary mode (counts and timing per syscall)                |
-
----
 
 
 # FIND PROCESS USING A PORT :
@@ -472,14 +389,12 @@ sudo lsof -i :<port>
 ```bash
 sudo lsof -i -P -n | grep LISTEN
 ```
+# EXAMPLE:
 
----
+lsof -p 4646 | head -5
 
-# PER - PROCESS STATISTICS :
-To view **per-process statistics** in Linux, you have several powerful tools and files that give detailed insights into each process’s **CPU usage, memory, I/O, threads, context switches**, and more.
-
-Here’s a breakdown of how to get **per-process stats**, from basic to advanced.
-
+# OUTPUT:
+![i](../images/lsof.png)
 ---
 
 ## 🧾 1. **Use `ps` for Basic Stats**
@@ -491,7 +406,9 @@ ps -p <PID> -o pid,ppid,%cpu,%mem,vsz,rss,tty,stat,time,cmd
 ### Example:
 
 ```bash
-ps -p 1234 -o pid,%cpu,%mem,vsz,rss,time,cmd
+ps -p 1 -o pid,%cpu,%mem,vsz,rss,time,cmd
+ps -p 2 -o pid,%cpu,%mem,vsz,rss,time,cmd
+ps -p 5 -o pid,%cpu,%mem,vsz,rss,time,cmd
 ```
 
 | Field  | Description               |
@@ -504,7 +421,9 @@ ps -p 1234 -o pid,%cpu,%mem,vsz,rss,time,cmd
 | `CMD`  | Command                   |
 
 ---
+# OUTPUT:
 
+![ii](../images/psp.png)
 
 ## 📦 5. **Use `pidstat` (from `sysstat` package)**
 
@@ -514,17 +433,9 @@ pidstat -p <PID> 1
 
 # OUTPUT:
 
-![yv](image-12.png)
+![yv](../images/pidstat.png)
 
 Shows real-time CPU, memory, and I/O stats for a process every second.
-
-> Install via:
-
-```bash
-sudo apt install sysstat
-```
-
----
 
 # SUMMARIZED FORM :
 
