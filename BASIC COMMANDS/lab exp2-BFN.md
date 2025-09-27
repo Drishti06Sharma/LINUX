@@ -5,7 +5,7 @@
 ## 1. `pwd` — Print Working Directory
 
 Displays the full path of the directory you’re currently in.
-![alt text](image.png)
+![alt text](../images/pwd.png)
 ```bash
 $ pwd
 /home/username/my-project
@@ -13,7 +13,7 @@ This helps you confirm your current location within the file system.
 DigitalOcean
 Linuxize
 
-## 2. 'wls' — List Directory Contents
+## 2. 'ls' — List Directory Contents
 Lists files and folders in the current (or specified) directory.
 
 bash
@@ -21,7 +21,7 @@ Copy
 Edit
 $ ls
 README.md src/ docs/
-![alt text](image-1.png)
+![alt text](../images/ls.png)
 $ ls -l
 drwxr-xr-x 2 user user 4096 Jul 26 10:00 docs
 -rw-r--r-- 1 user user  123 Jul 26 09:50 README.md
