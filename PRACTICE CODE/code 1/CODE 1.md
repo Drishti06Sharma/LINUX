@@ -29,8 +29,8 @@ fi
 
 ### PRACTICE VIDEOS: 
 
-<video controls src="pc1a.mp4" title="vg"></video>
-<video controls src="pc1b.mp4" title="vr"></video>
-<video controls src="pc1c.mp4" title="nj"></video>
-<video controls src="pc1d.mp4" title="bh"></video>
-<video controls src="pc1e.mp4" title="vm"></video>
+<video controls src="pc1a.mp4" title="bh"></video>
+<video controls src="pc1b.mp4" title="b"></video>
+<video controls src="pc1c.mp4" title="i"></video>
+<video controls src="pc1d.mp4" title="n"></video>
+<video controls src="pc1e.mp4" title="h"></video>
