@@ -19,7 +19,9 @@ else
   echo "File '$file' does not exist."
   read -p "Create it now? (y/N): " ans
   case "$ans" in
-    [Yy]*) touch "$file"; echo "Created $file"; echo "You can edit it using your favorite editor." ;;
+    [Yy]*) touch "$file"; 
+    echo "Created $file"; 
+    echo "You can edit it using your favorite editor." ;;
     *) echo "Not creating file." ;;
   esac
 fi
@@ -31,4 +33,4 @@ fi
 <video controls src="pc1b.mp4" title="vr"></video>
 <video controls src="pc1c.mp4" title="nj"></video>
 <video controls src="pc1d.mp4" title="bh"></video>
-<video controls src="pc1e.mp4" title="vg"></video>
+<video controls src="pc1e.mp4" title="vm"></video>
