@@ -116,8 +116,8 @@ Verify	Receiver	ls /home/user/
 ⸻
 ## INPUT:
 
-![aju](s_na.png)
+![aju](../images/s_na.png)
 
 ## OUTPUT:
 
-![hjv](out_na.jpg>)
+![hjv](../images/out_na.jpg)
