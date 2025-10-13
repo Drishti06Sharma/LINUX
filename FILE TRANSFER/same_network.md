@@ -111,13 +111,12 @@ Start SSH	Receiver	sudo systemctl start ssh
 Test SSH	Sender	ssh user@ip
 Send File	Sender	scp file user@ip:/path/
 Verify	Receiver	ls /home/user/
+```
 
-
-⸻
 ## INPUT:
 
-![aju](../images/s_na.png)
+![d](../images%202/s_nt.png)
 
 ## OUTPUT:
 
-![hjv](../images/out_na.jpg)
+![vhi](../images%202/s_no.png)
