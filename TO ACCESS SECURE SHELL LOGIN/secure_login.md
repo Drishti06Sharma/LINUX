@@ -40,7 +40,7 @@ Before we dive into commands, let’s understand what’s happening behind the s
 
 ### 🧭 Visual: Network Overview
 
-![H](image.png)
+![H](../images%202/image.png)
 
 🗣️ *In brief:* Networking is how your computer “talks” to another system. SSH(SECURE SHELL) is the language they use when they want to keep their conversation **private and secure. 🔒**
 
@@ -78,7 +78,7 @@ We use sudo whenever a command we are trying to run would result in a "Permissio
 
 ### 💡 Case A: Different Networks (Internet / WAN)
 
-![vhu](image-4.png)
+![vhu](../images%202/image-4.png)
 
 
 #### 🔹 Command for File Transfer
@@ -96,14 +96,14 @@ wormhole send ~/sum_d.sh
 
 # SNAPSHOT:
 
-![G](image-2.png)[reveiver]
-![v](image-3.png)[sender]
+![G](../images%202/image-2.png)[reveiver]
+![v](../images%202/image-3.png)[sender]
 
 ---
 
 ### 🌍 Case B: Same network
 
-![ugt](image-1.png)
+![ugt](../images%202/image-1.png)
 
 #### 🔸 Steps:
 
@@ -125,8 +125,8 @@ Based on the provided guide, here are the steps for sending a file between two L
 
 # SNAPSHOTS:
 
-![VG](image-5.png)[INPUT]
-![GJ](image-6.png)[OUTPUT]
+![VG](../images%202/image-5.png)[INPUT]
+![GJ](../images%202/image-6.png)[OUTPUT]
 ---
 
 ## 🔐 6. Authentication & Security
@@ -241,7 +241,7 @@ ping 10.0.2.15
 
 ## 🌐 9. Complete SSH Communication Flow
 
-![XF](image-8.png)
+![XF](../images%202/image-8.png)
 
 ---
 
