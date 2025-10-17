@@ -1,29 +1,5 @@
-Absolutely! Here's a fun, clear, and **visually attractive `README.md`** file for your `armstrong.sh` script — complete with emojis, examples, and explanations to make it friendly and easy to understand. 🧠💥
+### below is the code of armstrong.sh
 
----
-
-````md
-# 💪 `armstrong.sh` — Armstrong Number Checker 🔢✨
-
-Ever wondered if a number is **Armstrong-worthy**? 🧠 This Bash script checks whether a given non-negative integer is an **Armstrong number** — numbers that are equal to the sum of their digits each raised to the power of the number of digits!
-
----
-
-## 💡 What is an Armstrong Number?
-
-An **Armstrong number** (also called a **narcissistic number**) is a number that is equal to the **sum of its own digits**, each raised to the power of the number of digits.
-
-### 🔍 Examples:
-
-- `153` → \(1^3 + 5^3 + 3^3 = 153\) ✅  
-- `9474` → \(9^4 + 4^4 + 7^4 + 4^4 = 9474\) ✅  
-- `123` → ❌ Not an Armstrong number
-
----
-
-## CODE:💻
-
-```
 #!/bin/bash
 ` armstrong.sh
 ` Usage: ./armstrong.sh 153
@@ -64,76 +40,4 @@ if [ "$sum" -eq "$n" ]; then
 else
   echo "$n is NOT an Armstrong number (sum=$sum)."
 fi
-
-```
-### VISUALIZATION:📷
-
-![VU](../images/AN1.png)
-![VYU](../images/AN2.png)
-
-### 📜 Script Usage
-
-```bash
-./armstrong.sh <non-negative-integer>
-````
-
-### 🧪 Example
-
-```bash
-./armstrong.sh 153
-```
-
-➡️ Output:
-
-```
-153 is an Armstrong number.
-```
-
-### VISUALIZATION:📷
-
-![JVH](../images/AN3.png)
----
-
-## ⚙️ How It Works
-
-🔢 The script:
-
-1. ✅ Checks if exactly **one argument** is passed
-2. 📂 Validates that the input is a **non-negative integer**
-3. 📏 Counts the number of digits
-4. 🔁 Loops through each digit and raises it to the power of the total digits
-5. ➕ Adds the powers together
-6. 🤔 Compares the sum to the original number
-7. 📣 Prints the result
-
----
-
-## 🧠 Example Output
-
-```bash
-$ ./armstrong.sh 9474
-9474 is an Armstrong number.
-
-$ ./armstrong.sh 123
-123 is NOT an Armstrong number (sum=36).
-
-$ ./armstrong.sh abc
-Input must be a non-negative integer.
-
-$ ./armstrong.sh
-Usage: ./armstrong.sh <non-negative-integer>
-```
-### VISUALIZATION:📷
-
-![BKI](../images/AN4.png)
----
-
-## 🛠️ What's Inside the Script?
-
-* 🔁 `while` loops for digit counting and reversing
-* 🧮 Manual calculation of powers (no `math` libraries!)
-* 🧼 Clean error handling
-* 💬 Clear user messages
-
----
 
