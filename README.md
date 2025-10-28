@@ -1,184 +1,147 @@
-<h1 align="center">Hi 👋, I'm Drishti Sharma</h1>
-<h3 align="center">This repository consists of all the experiments we did during linux lab classes in first semester.
-This is designed to give a clear picture of each and every task.</h3>
----
+<!-- 🐧 LINUX REPO README – by Drishti Sharma -->
 
-```markdown
-# 🐧 Linux Coursework – Semester 1
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Drishti06Sharma/LINUX/main/images/linux_banner_dark.png" alt="Linux Banner" width="85%">
+</p>
 
-Welcome to my **Linux coursework repository**!  
-This project contains all the practical assignments, commands, and scripts I completed as part of **Semester 1 Linux training**. The aim is to provide a structured, easy-to-follow overview of basic to intermediate Linux concepts using real examples and hands-on scripting.
+<h1 align="center">👋 Hi, I'm <a href="https://github.com/Drishti06Sharma">Drishti Sharma</a></h1>
+<h3 align="center">🚀 Exploring Linux from Basics to Advanced | Semester 1 Coursework Repository 🐧</h3>
 
-Whether you're a beginner starting out with Linux or someone reviewing this for reference — you're in the right place! 🌱
-
----
-
-## 📁 Folder Overview
-
-Here's what each folder in this repository contains:
-``
-
-LINUX/
-├── ADVANCE COMMANDS/        → Intermediate to advanced Linux command practice
-├── BASIC COMMANDS/          → Essential beginner-level commands
-├── INSTALLATION/            → Linux setup and installation guides
-├── LINUS ASSIGNMENTS/       → Course-based assignments and exercises
-├── PRACTICE CODE/           → Self-practice scripts and experiments
-├── SHELL SCRIPTING/         → Bash scripts for automation and task execution
-├── images/                  → Supporting screenshots or visual files
-└── README.md                → This documentation file
-
-````
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Drishti06Sharma/LINUX?style=for-the-badge&logo=github&color=black">
+  <img src="https://img.shields.io/github/forks/Drishti06Sharma/LINUX?style=for-the-badge&logo=github&color=gray">
+  <img src="https://img.shields.io/github/last-commit/Drishti06Sharma/LINUX?style=for-the-badge&color=black">
+  <img src="https://komarev.com/ghpvc/?username=Drishti06Sharma&label=Visitors&style=for-the-badge&color=gray">
+</p>
 
 ---
 
-## 📘 Detailed Folder Descriptions
+## 🐧 About This Repository  
 
-### 🔹 `BASIC COMMANDS/`
-> 💡 *Learn the basics of interacting with the Linux terminal.*
+> Welcome to my **Linux Lab Coursework Repository** — a hands-on learning journey from the **basics of commands to shell scripting automation**.  
+> Each folder represents a topic explored during my first semester, with real examples, explanations, and commands you can try yourself!  
 
-- Commands like `ls`, `cd`, `mkdir`, `touch`, `rm`, and more.
-- Understanding file paths, directory navigation, and simple file handling.
-- A great starting point for beginners who are new to Linux.
+🎯 **Goal:** Make Linux learning fun, interactive, and crystal clear — from `pwd` to `chmod +x` 💻  
 
 ---
 
-### 🔹 `ADVANCE COMMANDS/`
-> ⚙️ *Going beyond the basics into more powerful Linux commands.*
+## 🧭 Quick Navigation  
 
-- Working with file permissions (`chmod`, `chown`)
-- Viewing processes and system resources (`ps`, `top`, `kill`)
-- Redirecting input/output (`>`, `>>`, `|`, `tee`)
-- Learning about piping and command chaining
-
----
-
-### 🔹 `INSTALLATION/`
-> 🛠️ *Step-by-step guides for installing Linux or specific packages.*
-
-- Linux distribution installation (e.g., Ubuntu, Kali)
-- Package installation using tools like `apt`, `yum`, `dnf`
-- Network and tool setup instructions
-- Includes screenshots (see `images/` folder)
+| 🔗 Section | 📂 Description |
+|-------------|----------------|
+| [📘 Folder Overview](#-folder-overview) | Explore each directory in the repo |
+| [⚙️ System & Admin Insights](#️-system--administration-insights) | Learn about processor, memory, and admin roles |
+| [💡 Skills Developed](#-skills-developed) | What I learned through this coursework |
+| [🚀 How to Use](#-how-to-use) | Commands to explore and run files |
+| [🌐 Continue Learning](#-continue-learning) | Jump to my LINUX_LEARNING repo |
+| [💻 About Me](#-about-me) | Know more about the creator |
 
 ---
 
-### 🔹 `LINUS ASSIGNMENTS/`
-> 📚 *Formal assignments from the course.*
+## 📘 Folder Overview  
 
-- Written answers, script submissions, and command outputs.
-- Useful for review and exam preparation.
-- Shows application of learned concepts in structured formats.
-
----
-
-### 🔹 `PRACTICE CODE/`
-> 🧪 *My own experimentation zone!*
-
-- Self-practice beyond the curriculum.
-- Includes creative uses of shell scripting.
-- Helps solidify concepts through repetition and custom challenges.
-
----
-
-### 🔹 `SHELL SCRIPTING/`
-> 🐚 *The heart of Linux automation.*
-
-This folder contains `.md` files with **actual Bash shell scripts** for performing specific tasks.
-
-#### 📝 Example Scripts Include:
-
-| 🗂️ File Name | 🔍 What It Does |
-|-------------|------------------|
-| `armstrong_no.md` | Checks if a number is an Armstrong number |
-| `basic_shellcommands.md` | Simple shell command collection |
-| `check file permission.md` | Script to check and report file permissions |
-| `count_lines.md` | Counts number of lines in a file |
-| `factorial_func.md` | Calculates factorial using a function |
-| `palindrome_num.md` | Checks if a number is a palindrome |
-
-> 📌 **Note:** These scripts are in `.md` format for explanation and readability. You can convert them to `.sh` files to run them in a terminal.
+| 📁 Folder Name | 💡 Description | 🧠 Key Concepts | 💻 Example Commands |
+|----------------|----------------|----------------|---------------------|
+| 🧩 **BASIC COMMANDS** | Learn fundamental terminal commands | Navigation, file ops | `pwd`, `ls -la`, `cd`, `mkdir test` |
+| ⚙️ **ADVANCE COMMANDS** | Intermediate & system-level tools | Permissions, process mgmt | `chmod 755 file.sh`, `ps aux`, `grep 'bash'` |
+| 🔁 **FILE TRANSFER** | Copy/move files remotely | Networking, SCP, Rsync | `scp file.txt user@host:/path` |
+| 🛠️ **INSTALLATION** | Installing distros & packages | apt, yum, dnf | `sudo apt install git` |
+| 💾 **LINUX SYSTEM** | System monitoring & resources | CPU, memory, storage | `free -h`, `df -h`, `top` |
+| 📔 **LINUX LEARNING JOURNEY** | Personal logs & daily progress | Self-paced learning | `echo "Day 1: Learned ls"` |
+| 🐚 **SHELL SCRIPTING** | Bash scripts for automation | Loops, if-else, functions | `bash factorial_func.sh` |
+| 🔐 **TO ACCESS SECURE SHELL LOGIN** | Remote access setup | SSH, key auth | `ssh user@192.168.x.x` |
+| 📚 **VIVA PREP** | Viva questions & revision sheet | Command use cases | `man chmod` |
+| 🧪 **PRACTICE CODE** | Self-coded mini projects | Pattern printing, loops | `cat practice.sh` |
+| 📄 **LINUS ASSIGNMENTS** | Official course tasks | Structured exercises | `cat assignment1.md` |
+| 🖼️ **images / images2** | Visual output & screenshots | — | *(used in markdown)* |
 
 ---
 
-## 🧠 Skills Developed
+## ⚙️ System & Administration Insights  
 
-By completing this coursework, I've learned and practiced the following core Linux skills:
+| 🧩 Component | ⚙️ Description | 🧰 Example Commands |
+|---------------|----------------|--------------------|
+| 🧮 **Processor (CPU)** | Executes all Linux operations and processes | `lscpu`, `top`, `htop` |
+| 💾 **Storage & Memory** | Monitors available disk and RAM usage | `free -m`, `df -h`, `du -sh *` |
+| 👩‍💻 **Administrator Role** | Installs, updates & manages system packages | `sudo apt install`, `useradd`, `ps aux` |
+| 🐚 **Shell Scripting Knowledge** | Automates repetitive tasks using bash | `for i in *; do echo $i; done` |
+| 💡 **General Coding Awareness** | Be familiar with diverse scripts & syntaxes | `grep`, `awk`, `sed`, `find` |
 
-| Skill | Description |
-|-------|-------------|
-| 💻 Linux CLI | Mastered navigation, file operations, and terminal commands |
-| 🛠️ System Configuration | Learned to install packages, set permissions, and manage users |
-| 🐚 Shell Scripting | Automated tasks using `bash`, loops, conditionals, and functions |
-| 🔒 Permissions | Used `chmod`, `chown`, and `umask` to control access |
-| 📋 Process Management | Handled jobs using `ps`, `top`, `kill`, `bg`, `fg` |
-| ⏰ Cron Jobs (Intro) | Basic automation using `crontab` (coming soon!) |
+> 🧠 *System administrators are like Linux wizards — installing, configuring, and maintaining systems so everything runs smoothly!* 🧙‍♀️
 
 ---
 
-## 🚀 How to Use This Repository
+## 💡 Skills Developed  
 
-You can clone this repository and run any script or read through the markdown files to learn.
+| 🧠 Skill | 🔍 Description |
+|-----------|----------------|
+| 💻 Linux CLI | Learned file handling, navigation, and terminal operations |
+| 🛠️ System Configuration | Installed tools, configured settings, and managed users |
+| 🐚 Shell Scripting | Created scripts to automate daily tasks |
+| 🔒 File Permissions | Controlled access with `chmod`, `chown`, and `umask` |
+| 🌐 SSH & Networking | Set up secure connections and file transfers |
+| ⏰ Scheduling | Intro to automation using `crontab` (coming soon!) |
+
+---
+
+## 🚀 How to Use  
 
 ```bash
 # Clone the repository
 git clone https://github.com/Drishti06Sharma/LINUX.git
 
-# Navigate to the main directory
+# Navigate into the directory
 cd LINUX
 
-# Open any folder to explore commands or scripts
-cd 'SHELL SCRIPTING'
-cat armstrong_no.md
+# Explore a folder
+cd "SHELL SCRIPTING"
 
-# (Optional) To run a script, copy it into a .sh file and execute
-cp armstrong_no.md armstrong_no.sh
-bash armstrong_no.sh
+# View a script
+cat factorial_func.md
+
+# Convert & run it
+cp factorial_func.md factorial_func.sh
+chmod +x factorial_func.sh
+bash factorial_func.sh
 ````
 
-> ⚠️ Make sure to give executable permissions if needed:
-> `chmod +x armstrong_no.sh`
+> 💬 Tip: Use `cat`, `less`, or `nano` to read `.md` files directly from your terminal.
 
 ---
 
-## 🖼️ Images & Visual Guides
+## 🌐 Continue Learning
 
-Visual screenshots used for installation or output examples are available in the `images/` folder. These help in understanding what the expected results should look like.
+🎓 Take your Linux journey forward → [**LINUX_LEARNING Repository**](https://github.com/Drishti06Sharma/LINUX_LEARNING)
 
----
+> 📚 Structured like a 100-day course — learn step by step from beginner to advanced!
 
-## 📅 Project Timeline
-
-* 🗓️ **Semester:** 1
-* 📚 **Course:** Linux Basics & Scripting
-* ⏰ **Last Updated:** 1 hour ago
+<p align="center">
+  <img src="https://media.tenor.com/NUkAbvKq5X4AAAAC/linux-penguin.gif" width="120px">
+</p>
 
 ---
 
 ## 👩‍💻 About Me
 
-I'm Drishti Sharma — an enthusiastic learner exploring the world of Linux, programming, and system administration.
+Hi, I’m **Drishti Sharma** — a tech enthusiast exploring Linux, open-source tools, and system administration 🧑‍💻🐧
 
-* 🔗 GitHub: [Drishti06Sharma](https://github.com/Drishti06Sharma)
-* 💬 Always open to learning, collaborating, and growing!
-
----
-
-## 🌟 Support This Project
-
-If you found this repository helpful or insightful:
-
-* ⭐ Star this repo
-* 🍴 Fork it to make it your own
-* 🐛 Submit issues or suggestions
-* 🤝 Contribute improvements or new scripts
-
-> Made with patience, curiosity, and a lot of `cd ..`
+🔗 [**GitHub Profile**](https://github.com/Drishti06Sharma)
+💬 “Curiosity is my shell; learning is my command.”
 
 ---
 
+## 💙 Support This Project
+
+If this repo helped you —
+⭐ **Star it**
+🍴 **Fork it**
+🐛 **Report issues**
+💬 **Contribute your own scripts!**
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=435&lines=Made+with+💙+by+Drishti+Sharma;Happy+Linux+Learning!+🐧">
+</p>
 ```
 
 ---
-
 
