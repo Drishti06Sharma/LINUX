@@ -243,22 +243,10 @@ ionice -c <class> -n <priority> -p <PID>
 # INPUT:
 ```
 bash
-ionice -c 3 -p 4646
+ionice -c 3 -p 3334
 ```
----
-
-## 6. 🎛️ I/O Priority Classes
-
-There are **three scheduling classes**:
-
-| Class                     | Code | Description                                                 |
-| ------------------------- | ---- | ----------------------------------------------------------- |
-| **Idle**                  | `3`  | Process only gets I/O when no one else needs it.            |
-| **Best Effort** (default) | `2`  | Normal I/O scheduling. Can assign priority levels (`0–7`).  |
-| **Real Time**             | `1`  | Highest priority — used with care. Can hog disk. Root only. |
-
-> 🎯 **Lower numbers = higher priority** (just like `nice` values)
-
+# OUTPUT:
+![cgu](image.png)
 ---
 
 # 7. FILE DESCRIPTION USED BY A PROCESS :
@@ -283,7 +271,7 @@ lsof -p <PID>
 
 # OUTPUT:
 
-
+![e](image-1.png)
 
 ---
 
@@ -315,8 +303,9 @@ To find **which process is using a specific port** in Linux (e.g., `port 8080`),
 ```bash
 sudo fuser -n tcp 8080
 ```
+# OUTPUT:
 
-
+![h](image-2.png)
 
 ## 📦 10. **Use `pidstat` (from `sysstat` package)**
 
